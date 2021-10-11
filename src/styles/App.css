@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+.App{
+    width: 800px;
+}
+
+.post__high{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid salmon;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.post__title{
+    border-bottom: 1px solid black;
+    width: 765px;
+    padding-bottom: 5px;
+}
+
+.post__low{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.header{
+    padding: 15px;
+    border: 1px solid black;
+    background-color: salmon;
+    text-align: center;
+}
+

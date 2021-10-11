@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/App.css';
+import PostItem from './components/PostItem/PostItem';
+import Button from './components/Button/Button';
+import Modal from './components/Modal/Modal';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [modalActive, setModalActive] = useState(false);
+  const [items, setItems] = useState(['Заголовок']);
+//item
+// {
+//  title: '',
+//  text: ''
+// }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='header'>Header</h1>
+      <main>
+
+
+        {items.map((item) => {
+          return <PostItem title={item}/>  
+        })   
+        }
+
+        
+        <Button onClick={() => setModalActive(true)}/>
+      </main>
+      <Modal wasd="wasd" active={modalActive} setActive={setModalActive} setItems={setItems} items={items} />
+        
     </div>
   );
 }
