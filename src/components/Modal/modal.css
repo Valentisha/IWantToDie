@@ -24,7 +24,9 @@
     background-color: salmon;
     height: 400px;
     width: 400px;
-    transform: scale(1);
+    transform: scale(0.5);
+    transition: 0.5s all;
+    width: 50vw;
 }
 
 .modal__content.active{
