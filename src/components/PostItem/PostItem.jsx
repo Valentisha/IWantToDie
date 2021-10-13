@@ -25,7 +25,7 @@ const PostItem = ({item, deleteItem}) => {
           </div>
           <div className='post__low'>
             <div className='post__action'>{item.text}</div>
-            <button onClick={() => deleteItem(item.id)}>Delete</button>
+            <button onClick={() => deleteItem(item.id)}>Удалить</button>
           </div>
          
 
