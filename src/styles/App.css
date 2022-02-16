@@ -41,3 +41,46 @@
     text-align: center;
 }
 
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.buttons__close{
+    margin-left: 20px;
+    padding: 7px 10px;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 5px;
+}
+
+.buttons__create{
+    border-radius: 5px;
+    background-color: white;
+    padding: 7px 6px;
+}
+
+.modal__input{
+    width: 100%;
+    padding: 5px;
+}
+
+.close-delete{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.close-delete__delete{
+    border-radius: 5px;
+    background-color: rgb(216, 69, 69);
+    padding: 7px 6px;
+}
+
+.close-delete__close{
+    border-radius: 5px;
+    background-color: rgb(76, 76, 209);
+    padding: 7px 6px;
+}

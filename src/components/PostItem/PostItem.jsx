@@ -11,21 +11,16 @@ import React from "react";
 //     TITLE:''
 //     TEXT:''
 //   },
-
-let a = {
-  asdf: 1234
-}
-
-const PostItem = ({item, deleteItem}) => {
+const PostItem = ({item, deleteItem, callRename}) => {
     return (
-    <div className='post__high'>
+    <div onClick={()=> {callRename(item.id)}} className='post__high'>
         <div className='post__content'>
           <div className='post__title'>
             <b>{item.title}</b>
           </div>
           <div className='post__low'>
             <div className='post__action'>{item.text}</div>
-            <button onClick={() => deleteItem(item.id)}>Удалить</button>
+            <button onClick={(e) => {e.stopPropagation(); deleteItem(item.id)}}>Удалить</button>
           </div>
          
 
